@@ -1,0 +1,32 @@
+<?php
+// Establecer conexión a la base de datos
+$conn = new mysqli("localhost", "root", "contraseña", "tienda");
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error en la conexión: " . $conn->connect_error);
+}
+
+// Consulta SQL para encontrar los productos más vendidos
+$sql = "SELECT p.Nombre_Producto, COUNT(*) AS Total_Ventas
+        FROM productos p
+        JOIN pedidos pd ON p.ID_Producto = pd.ID_Producto
+        GROUP BY p.Nombre_Producto
+        ORDER BY Total_Ventas DESC
+        LIMIT 10";
+
+$resultado = $conn->query($sql);
+
+// Verificar si se encontraron resultados
+if ($resultado->num_rows > 0) {
+    // Imprimir los resultados
+    while ($fila = $resultado->fetch_assoc()) {
+        echo "Producto: " . $fila["Nombre_Producto"] . " - Total de ventas: " . $fila["Total_Ventas"] . "<br>";
+    }
+} else {
+    echo "No se encontraron productos vendidos.";
+}
+
+// Cerrar la conexión
+$conn->close();
+?>
