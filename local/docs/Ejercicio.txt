@@ -1,0 +1,8 @@
+Ejercicio 2
+Nombre: Joel Brito
+Materia: Aplicaciones Distribuidas
+2. Diseña una base de datos para gestionar el inventario
+ de una tienda que incluya tablas para productos, proveedores y pedidos.
+  Cada producto tiene un nombre, un precio y está asociado a un proveedor.
+  Cada proveedor puede suministrar varios productos. 
+  Crea consultas para encontrar los productos más vendidos y los proveedores que suministran más productos.
