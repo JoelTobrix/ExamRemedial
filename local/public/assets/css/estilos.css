@@ -1,0 +1,25 @@
+/* Estilos para los botones */
+.boton-form {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+
+.boton-imagen {
+    background-image: url("public/img/icons/agregar_producto.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 30px;
+}
+
+}
