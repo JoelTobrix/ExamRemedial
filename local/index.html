@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de productos</title>
+    <img src="public/img/logo/Logo.png" weight="100px" width="100px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53QfhCXVYiZB0tK6f3L Joe0U8RhgoPp1I0==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/assets/css/estilos.css">
+</head>
+<body>
+    <h1 align="center">Tienda de productos</h1>
+<div class="botones-container">
+    <form action="./views/agregar.views.php" method="post" class="boton-form">
+        <input type="submit" value="Agregar Producto" class="boton" style="padding: 8px 30px 8px 25px; background-image: url('public/img/icons/agregar_producto.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 5px center;"> 
+    </form>
+
+
+        <form action="views/proveedor.views.php" method="post" class="boton-form">
+      <input type="submit" value="Proveedor" class="boton" style="padding: 8px 30px 8px 25px; background-image: url('public/img/icons/mensajero.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 5px center;">
+        </form>
+
+
+        <form action="views/comprar_producto.views.php" method="post" class="boton-form">
+            <input type="submit" value="Comprar" class="boton" style="padding: 8px 30px 8px 25px; background-image: url('public/img/icons/verificar.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 5px center;">
+        </form>
+
+        <form action="views/productos_vendidos.views.php" method="post" class="boton-form">
+            <input type="submit" value="Productos Vendidos" class="boton" style="padding: 8px 30px 8px 25px; background-image: url('public/img/icons/productos.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 5px center;">
+        </form>
+
+        <form action="views/listado_proveedores.views.php" method="post" class="boton-form">
+            <input type="submit" value="Listado proveedores productos" class="boton" style="padding: 8px 30px 8px 25px; background-image: url('public/img/icons/inventario.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: 5px center;">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
